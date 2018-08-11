@@ -4,6 +4,12 @@ import "./App.css";
 import { Switch, Route, withRouter } from "react-router-dom";
 import ReactDOM from "react-dom";
 import Navbar from "./components/NavBar";
+import {
+  LandingContainer,
+  ConsumerContainer,
+  BusinessOwnerContainer,
+  FinancialContainer
+} from "./containers";
 
 class App extends Component {
   render() {
@@ -34,13 +40,13 @@ class App extends Component {
         <Route
           path="/entrepreneur"
           render={routerProps => {
-            return <EntrepreneurContainer {...routerProps} />;
+            return <BusinessOwnerContainer {...routerProps} />;
           }}
         />
         <Route
           path="/financial"
           render={routerProps => {
-            return <FinancialConsumer {...routerProps} />;
+            return <FinancialContainer {...routerProps} />;
           }}
         />
       </Switch>
