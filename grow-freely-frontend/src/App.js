@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Switch, Route, withRouter } from "react-router-dom";
+import ReactDOM from "react-dom";
 
 class App extends Component {
   render() {
