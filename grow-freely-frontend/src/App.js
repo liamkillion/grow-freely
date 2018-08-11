@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Switch, Route, withRouter } from "react-router-dom";
 import ReactDOM from "react-dom";
+import Navbar from "./components/NavBar";
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
       //   </p>
       // </div>
       <Switch>
+        <NavBar />
         <Route
           path="/landing"
           render={routerProps => {
