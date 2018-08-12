@@ -5,16 +5,7 @@ import BusinessOwnerDashboardContainer from "./BusinessOwnerDashboardContainer";
 
 class BusinessOwnerContainer extends React.Component {
   render() {
-    state = {
-      componentDisplay: ""
-    };
-    return (
-      <div className="container">
-        if (this.state.componentDisplay = "dashboard")
-        {<BusinessOwnerSurveyContainer />} else
-        {<BusinessOwnerDashboardContainer />}
-      </div>
-    );
+    return <BusinessOwnerDashboardContainer />;
   }
 }
 

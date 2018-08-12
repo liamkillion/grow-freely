@@ -17,22 +17,34 @@ class LandingContainer extends React.Component {
         <Row>
           <Col s={1} />
           <Col s={3}>
-            <Button href="/consumer" onClick={() => console.log("redirect?")}>
+            <Button
+              href="/consumer"
+              onClick={() => {
+                this.props.history.push("/consumer");
+              }}
+            >
               Consumer?
             </Button>
           </Col>
           <Col s={1} />
           <Col s={3}>
             <Button
-              href="/entrepreneur"
-              onClick={() => console.log("redirect?")}
+              href="/entrepreneur/survey"
+              onClick={() => {
+                this.props.history.push("/entrepreneur/survey");
+              }}
             >
-              Busines Owner?
+              Business Owner?
             </Button>
           </Col>
           <Col s={1} />
           <Col s={3}>
-            <Button href="/financial" onClick={() => console.log("redirect?")}>
+            <Button
+              href="/financial"
+              onClick={() => {
+                this.props.history.push("/financial");
+              }}
+            >
               Financial Institution?
             </Button>
           </Col>

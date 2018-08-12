@@ -5,11 +5,11 @@ import { Row, Col } from "react-materialize";
 class ConsumerContainer extends React.Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <Row>
           <Col s={4} />
           <Col s={4}>
-            <h1>Liam's Candle Company</h1>
+            <h1>Liam Candle Company</h1>
           </Col>
           <Col s={4} />
         </Row>

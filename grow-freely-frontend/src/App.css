@@ -23,6 +23,21 @@
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.outer-graph {
+  border-radius: 16px;
+  border: 1px solid #ccc;
+}
+.inner-graph {
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  background-color: blue;
+  padding-left: 45%;
 }
