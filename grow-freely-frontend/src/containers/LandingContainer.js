@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Col, Button } from "react-materialize";
+import { Row, Col, Button } from "react-materialize";
 
 class LandingContainer extends React.Component {
   render() {
@@ -17,15 +17,21 @@ class LandingContainer extends React.Component {
         <Row>
           <Col s={1} />
           <Col s={3}>
-            <Button>Consumer?</Button>
+            <Button href="/consumer" onClick={() => console.log(redirect?)}>
+              Consumer?
+            </Button>
           </Col>
           <Col s={1} />
           <Col s={3}>
-            <Button>Busines Owner?</Button>
+            <Button href="/entrepreneur" onClick={() => console.log(redirect?)}>
+              Busines Owner?
+            </Button>
           </Col>
           <Col s={1} />
           <Col s={3}>
-            <Button>Financial Institution?</Button>
+            <Button href="/financial" onClick={() => console.log(redirect?)}>
+              Financial Institution?
+            </Button>
           </Col>
           <Col s={1} />
         </Row>
