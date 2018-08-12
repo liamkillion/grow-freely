@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Row, Input } from "react-materialize";
+import { Row, Input, Button } from "react-materialize";
 
 class OnboardingSurvey extends React.Component {
   render() {
@@ -20,6 +20,9 @@ class OnboardingSurvey extends React.Component {
           <option value="2">Have a business & want to expand</option>
           <option value="3">Have an idea but no funding</option>
         </Input>
+        <Button onClick={(this.props.componentDisplay = "dashboard")}>
+          Submit
+        </Button>
       </Row>
     );
   }

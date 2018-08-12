@@ -17,19 +17,22 @@ class LandingContainer extends React.Component {
         <Row>
           <Col s={1} />
           <Col s={3}>
-            <Button href="/consumer" onClick={() => console.log(redirect?)}>
+            <Button href="/consumer" onClick={() => console.log("redirect?")}>
               Consumer?
             </Button>
           </Col>
           <Col s={1} />
           <Col s={3}>
-            <Button href="/entrepreneur" onClick={() => console.log(redirect?)}>
+            <Button
+              href="/entrepreneur"
+              onClick={() => console.log("redirect?")}
+            >
               Busines Owner?
             </Button>
           </Col>
           <Col s={1} />
           <Col s={3}>
-            <Button href="/financial" onClick={() => console.log(redirect?)}>
+            <Button href="/financial" onClick={() => console.log("redirect?")}>
               Financial Institution?
             </Button>
           </Col>
